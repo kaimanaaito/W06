@@ -5,49 +5,49 @@
 }
 
 body, html {
-    height: 100%; /* 全体の高さを100%に設定 */
+    height: 100%; 
 }
 
 main {
-    display: flex; /* フレックスボックスを使用 */
-    height: 100vh; /* ビューポートの高さに合わせる */
+    display: flex; 
+    height: 100vh; 
 }
 
 .left {
-    flex: 1; /* 左側の幅を設定 */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* 縦方向に中央揃え */
-    align-items: center; /* 横方向に中央揃え */
-    padding: 20px; /* 余白を追加 */
-    position: relative; /* 相対位置を設定 */
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    position: relative; 
 }
 
 .title {
-    font-size: 9em; /* タイトルのフォントサイズを大きく設定 */
-    color: black; /* タイトルの色を黒に設定 */
-    z-index: 10; /* 画像の上に表示 */
-    position: absolute; /* 絶対位置を設定 */
-    top: 30%; /* 上からの位置を調整 */
-    left: 100%; /* 左からの位置を中央に設定 */
-    transform: translate(-50%, -20%); /* 中央揃えにする（少し上に） */
-    letter-spacing: 0.1em; /* 文字の間隔を広げる */
-    white-space: nowrap; /* テキストを一行にする */
+    font-size: 9em; 
+    color: black; 
+    z-index: 10; 
+    position: absolute; 
+    top: 30%; 
+    left: 100%; 
+    transform: translate(-50%, -20%); 
+    letter-spacing: 0.1em; 
+    white-space: nowrap; 
 }
 
 .image {
-    max-width: 100%; /* 画像の最大幅を100%に設定 */
-    height: auto; /* アスペクト比を維持 */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .right {
-    flex: 1; /* 右側の幅を設定 */
-    background-color: gray; /* グレーの背景色 */
+    flex: 1; 
+    background-color: gray; 
     display: flex; 
-    justify-content: center; /* テキストを横方向に中央揃え */
-    align-items: flex-start; /* テキストを上寄せにする */
-    padding-top: 450px; /* 上からの余白を増やして下に下げる */
-    color: rgb(171, 11, 11); /* テキストの色 */
-    font-size: 4em; /* テキストのフォントサイズ */
-    letter-spacing: 0.2em; /* 文字の間隔を広げる */
-    font-weight: bold; /* 太文字に設定 */
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 450px; 
+    color: rgb(171, 11, 11);
+    font-size: 4em; 
+    letter-spacing: 0.2em; 
+    font-weight: bold; 
 }
