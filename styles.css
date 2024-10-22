@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%; /* 全体の高さを100%に設定 */
+}
+
+main {
+    display: flex; /* フレックスボックスを使用 */
+    height: 100vh; /* ビューポートの高さに合わせる */
+}
+
+.left {
+    flex: 1; /* 左側の幅を設定 */
+    display: flex;
+    justify-content: center; /* 縦方向に中央揃え */
+    align-items: center; /* 横方向に中央揃え */
+    padding: 20px; /* 余白を追加 */
+    position: relative; /* 相対位置を設定 */
+}
+
+.title {
+    font-size: 9em; /* タイトルのフォントサイズを大きく設定 */
+    color: black; /* タイトルの色を黒に設定 */
+    z-index: 10; /* 画像の上に表示 */
+    position: absolute; /* 絶対位置を設定 */
+    top: 30%; /* 上からの位置を調整 */
+    left: 100%; /* 左からの位置を中央に設定 */
+    transform: translate(-50%, -20%); /* 中央揃えにする（少し上に） */
+    letter-spacing: 0.1em; /* 文字の間隔を広げる */
+    white-space: nowrap; /* テキストを一行にする */
+}
+
+.image {
+    max-width: 100%; /* 画像の最大幅を100%に設定 */
+    height: auto; /* アスペクト比を維持 */
+}
+
+.right {
+    flex: 1; /* 右側の幅を設定 */
+    background-color: gray; /* グレーの背景色 */
+    display: flex; 
+    justify-content: center; /* テキストを横方向に中央揃え */
+    align-items: flex-start; /* テキストを上寄せにする */
+    padding-top: 450px; /* 上からの余白を増やして下に下げる */
+    color: rgb(171, 11, 11); /* テキストの色 */
+    font-size: 4em; /* テキストのフォントサイズ */
+    letter-spacing: 0.2em; /* 文字の間隔を広げる */
+    font-weight: bold; /* 太文字に設定 */
+}
